@@ -2,14 +2,15 @@ import Link from "next/link";
 import Titulo from "../components/Titulo.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-function Home() {
+function Sobre() {
   return (
     <div>
-      <Titulo>Página Inicial</Titulo>
-      <Link href="/sobre" className="btn btn-primary">
-        Ir para página sobre
+      <Titulo> Sobre </Titulo>
+      <Link href={"/"} className="btn btn-primary">
+        Acessar a Página Inicial
       </Link>
     </div>
   );
 }
-export default Home;
+
+export default Sobre;
