@@ -9,6 +9,9 @@ function Home() {
       <Link href="/sobre" className="btn btn-primary">
         Ir para página sobre
       </Link>
+      <Link href="/tempo" className="btn btn-danger">
+        Ir para página Tempo
+      </Link>
     </div>
   );
 }
