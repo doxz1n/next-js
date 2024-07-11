@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Titulo from "../components/Titulo.js";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { revalidateTag } from "next/cache";
 
 function Tempo(props) {
   console.log("> Passando pelo Frontend;");
@@ -29,6 +30,7 @@ export async function getStaticProps() {
     props: {
       dataEstaticaString,
     },
+    revalidate: 1,
   };
 }
 
